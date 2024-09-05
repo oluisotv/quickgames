@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#b487eb, #e0edff);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    animation: pipe-animation 2s infinite linear;
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.nuvem {
+    position: absolute;
+    width: 550px;
+    animation: nuvem-animation 20s infinite linear;
+}
+
+.score {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    }
+
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes nuvem-animation {
+    from{
+        right: -550px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 45px 25px;
+    color: white;
+    position: relative;
+    background-color: rgb(23, 24, 37);
+    box-shadow: 1px 3px 25px 0px rgba(0, 0, 0, 0.336);
+}
+
+header img {
+    max-width: 130px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+a.my-button {
+    position: absolute;
+    left: 82%;
+    background: linear-gradient(45deg, rgba(36, 51, 255, 0.9), rgb(132, 0, 255));
+    color: #ffffff;
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 2px;
+    border-radius: 10px;
+}
+
+a.my-button:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+a.my-button:active {
+    transform: scale(0.95);
+}
+
+a.my-button2 {
+    position: absolute;
+    left: 90%;
+    background-color: #11417800;
+    color: #ffffff;
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 12px 15px;
+    border: 2px solid rgb(132, 0, 255);
+    border-radius: 10px;
+}
+
+a.my-button2:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+a.my-button2:active {
+    transform: scale(0.95);
+}
+body{
+    background: rgb(33,63,84);
+    background: radial-gradient(circle, rgb(26, 25, 36) 0%, rgb(22, 22, 36) 35%, rgb(10, 10, 12) 100%);
+}

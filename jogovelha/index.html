@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Jogo da velha</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div class="tabuleiro">
+            <div class="linha">
+                <div class="quadrados" onclick="play(0, 0)"></div>
+                <div class="quadrados" onclick="play(0, 1)"></div>
+                <div class="quadrados" onclick="play(0, 2)"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrados" onclick="play(1, 0)"></div>
+                <div class="quadrados" onclick="play(1, 1)"></div>
+                <div class="quadrados" onclick="play(1, 2)"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrados" onclick="play(2, 0)"></div>
+                <div class="quadrados" onclick="play(2, 1)"></div>
+                <div class="quadrados" onclick="play(2, 2)"></div>
+            </div>
+        </div>
+        <div id="status"></div>
+    </div>
+
+    <a href="index.html">
+    <input type="button" class="botao" value="Jogar novamente" />
+    </a>
+    
+    
+    
+    <script src="js/script.js" defer></script>
+</body>
+</html>

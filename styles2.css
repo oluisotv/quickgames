@@ -1,0 +1,126 @@
+html, body {
+    height: 100%; /* Garante que o body e o html ocupem toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+}
+
+body {
+    font-family: "REM", sans-serif;
+    background: rgb(33,63,84);
+    background: radial-gradient(circle, rgb(26, 25, 36) 0%, rgb(22, 22, 36) 35%, rgb(10, 10, 12) 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main.login {
+    display: flex; /* Define o display como flex */
+    justify-content: center; /* Alinha o container horizontalmente no centro */
+    align-items: center; /* Alinha o container verticalmente no centro */
+    min-height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+    padding: 20px; /* Espaço ao redor do conteúdo */
+}
+
+.login-container {
+    background-color: #f4f4f409;
+    box-shadow: 1px 3px 25px 0px rgba(0, 0, 0, 0.336); /* Fundo branco para o container */
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px; /* Define a largura máxima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /* Cor do texto */
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d6d5d5; /* Cor do texto */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.2px solid #5c5c68;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #f4f4f409; /* Cor de fundo dos inputs */
+    color: #ffffff; /* Cor do texto */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #b980ff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+button {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(130deg, rgba(34,51,195,1) 0%, rgb(153, 0, 255) 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "REM", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9500ff;
+}
+
+.additional-options {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+
+.additional-options a {
+    color: hwb(221 4% 0%);
+    text-decoration: none;
+}
+
+.additional-options a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 45px 25px;
+    color: white;
+    position: relative;
+    background-color: rgb(23, 24, 37);
+    box-shadow: 1px 3px 25px 0px rgba(0, 0, 0, 0.336);
+}
+
+header img {
+    max-width: 130px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
